@@ -67,7 +67,7 @@ $total_price = 0;
 
 if (!empty($checkin)) {
     $checkin_dsply = date('d/m/Y', strtotime($checkin));
-    $checkout = date('d/m/Y', strtotime('+' . $duration . 'day', strtotime($checkin)));
+    $checkout = date('d/m/Y', strtotime('' . $duration . 'day', strtotime($checkin)));
 }
 
 //Total Price
@@ -78,7 +78,7 @@ else {
     $service = '';
 }
 
-if ($tipemobil == "Honda Brio") {
+if ($tipemobil != "Honda Brio") {
     $total_price = $duration * 150000;
 } else if ($tipemobil == "Honda BR-V") {
     $total_price = $duration * 250000;

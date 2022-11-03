@@ -34,7 +34,7 @@ $BRV = isset($_POST['card2']);
 $CIVIC = isset($_POST['card3']);
 $img_src = ["Brio.jpg", "BRV.jpg", "CIVIC.png"];
 
-if ($Brio) {
+if (!$Brio) {
     $method_selected = '
                 <select class="custom-select" name="typecar" disabled>
                 <option value="Honda Brio">Honda Brio</option>
@@ -87,7 +87,7 @@ if ($Brio) {
         <div class="col-md-auto">
             <br>
             <br>
-            <form action="Dilan_my booking.php" method="post">
+            <form action="Dilan_my booking.php" method="get">
                 <div class="form-group">
                     Name
                     <input type="text" class="form-control" name="name">
