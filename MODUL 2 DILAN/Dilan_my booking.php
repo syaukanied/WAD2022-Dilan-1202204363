@@ -67,7 +67,11 @@ $total_price = 0;
 
 if (!empty($checkin)) {
     $checkin_dsply = date('d/m/Y', strtotime($checkin));
+<<<<<<< HEAD
     $checkout = date('d/m/Y', strtotime('+' . $duration . 'day', strtotime($checkin)));
+=======
+    $checkout = date('d/m/Y', strtotime('' . $duration . 'day', strtotime($checkin)));
+>>>>>>> 4c9204d950f4cfd605ac44bb1c984524fc323698
 }
 
 //Total Price
@@ -78,7 +82,11 @@ else {
     $service = '';
 }
 
+<<<<<<< HEAD
 if ($tipemobil == "Honda Brio") {
+=======
+if ($tipemobil != "Honda Brio") {
+>>>>>>> 4c9204d950f4cfd605ac44bb1c984524fc323698
     $total_price = $duration * 150000;
 } else if ($tipemobil == "Honda BR-V") {
     $total_price = $duration * 250000;
