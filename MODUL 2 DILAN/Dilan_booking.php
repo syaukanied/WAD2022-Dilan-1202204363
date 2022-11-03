@@ -34,11 +34,8 @@ $BRV = isset($_POST['card2']);
 $CIVIC = isset($_POST['card3']);
 $img_src = ["Brio.jpg", "BRV.jpg", "CIVIC.png"];
 
-<<<<<<< HEAD
+
 if ($Brio) {
-=======
-if (!$Brio) {
->>>>>>> 4c9204d950f4cfd605ac44bb1c984524fc323698
     $method_selected = '
                 <select class="custom-select" name="typecar" disabled>
                 <option value="Honda Brio">Honda Brio</option>
@@ -91,11 +88,8 @@ if (!$Brio) {
         <div class="col-md-auto">
             <br>
             <br>
-<<<<<<< HEAD
             <form action="Dilan_my booking.php" method="post">
-=======
             <form action="Dilan_my booking.php" method="get">
->>>>>>> 4c9204d950f4cfd605ac44bb1c984524fc323698
                 <div class="form-group">
                     Name
                     <input type="text" class="form-control" name="name">
