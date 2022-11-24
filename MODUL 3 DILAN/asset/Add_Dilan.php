@@ -29,7 +29,7 @@
                 <a style="color: white" class="nav-link" href="Add_Dilan.php">My car</a>
               </li>
               <div class="d-flex">
-          <a href="./pages/add-hamka.php">
+          <a href="./pages/add_Dilan">
           <button class="btn " type="submit" style="color: white;">Add car</button></a>
       </div>
         </div>
