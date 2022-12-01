@@ -9,9 +9,9 @@
     $sandi2 = $_POST['password2'];
 
     if($sandi == $sandi2){
-        $query = mysqli_query($connect, "INSERT INTO users_dilan (id, nama, email, password, no_hp) 
+        $query = mysqli_query($connect, "INSERT users_dilan (id, nama, email, password, no_hp) 
         VALUES ('$id','$name', '$email', '$sandi', '$noHP')");
-    if($query){
+    if(!$query){
         setcookie('nama', $name, time()+86400*30, '/' );
         setcookie('email', $email, time()+86400*30, '/' );
         setcookie('password', $sandi, time()+86400*30, '/' );

@@ -4,7 +4,7 @@
     $email=$_POST['email'];
     $sandi=$_POST['password'];
     
-    $query=mysqli_query($connect, "SELECT * from users_dilan where email = '$email' && password = '$sandi'");
+    $query=mysqli_query($connect, "SELECT email from users_dilan where email = '$email' && password = '$sandi'");
     $rows=mysqli_num_rows($query);
 
     if ($rows) {
