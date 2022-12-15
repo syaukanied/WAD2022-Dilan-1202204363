@@ -46,7 +46,7 @@
                     <br>
                     <div class="col-12">
                         <button class="btn btn-primary" type="submit">Login</button>
-                        <p>Anda belum punya akun? <a href="./register">Register</a></p>
+                        <p>Anda belum punya akun? <a href="/register">Register</a></p>
                     </div>
                 </div>
             </form>
