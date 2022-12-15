@@ -30,7 +30,7 @@
             <div class="col-md-4 mt-4">
                 <h1 class="titleLogin mb-3 fw-bold"></h1>
                 <form method="POST" action="{{ route('register.action') }}">
-                    @csrf
+                    
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
